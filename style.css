@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Quattrocento', serif;
+    /* line-height: 1.6; */
+    background-color: #F2D98D;
+    color: #333;
+}
+
+header {
+    background-color: #F2D98D;
+    color: #ecf0f1;
+    /* padding: 20px; */
+    text-align: left;
+}
+
+.navbar {
+    text-align: right;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-right: 3rem;
+}
+
+.navbar ul {
+    list-style: none;
+    
+}
+
+.navbar li {
+    display: inline-block;
+    margin-left: 3rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #1C181D;
+    font-weight: bold;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #FF9B3F;
+}
+
+.cabecera{
+    display: flex;
+    justify-content: space-around;
+}
+
+.title_one {
+    color: #93bde7;
+    background: -webkit-linear-gradient(88.4deg, rgba(255, 138, 0, 1.00) 0%,rgba(215, 19, 160, 1.00) 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #FF8A00;  
+    font-size: 5rem;
+} 
+
+.textos{
+    color: #0e0d0d;
+    padding: 46px;
+    /* flex-wrap: wrap; */
+    
+}
+
+.textos h1{
+    font-size: 6rem;
+    font-weight: 100;
+    /* margin-bottom: -10px; */
+    
+}
+.textos h2{
+    font-size: 4.5rem;
+}
+.textos h3 {
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.mail_cv{
+    display:inline-flex;
+    align-items: center;
+}
+
+.mail_cv i {
+    margin-left: 20px; 
+}
+
+.mail_cv p{
+    font-size: 1.4rem;
+    color: #1C181D;
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+.btn_cv{
+    font-family:'Quattrocento', serif ;
+    padding: 14px 70px;
+    border-radius: 6px;
+    border: none;
+    background-color: #FFD554;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 1.4rem;
+    color: #1C181D;
+    font-weight: 600;
+    width: 300px;
+}
+
+
+
+.btn_cv:hover {
+    background-color: #FF9B3F;
+}
+
+.img-profile{
+    width: 70%;
+    margin-left:20%;
+    margin-top: 5%;
+}
+.img_pic{
+    justify-content: flex-end;
+    
+}
+
+.iconos{
+    font-size: 3rem;
+    display: inline;
+    margin-left:40%;
+}
+
+
+.iconos .fa-brands{
+    padding: 0 14px;
+}
+
+.iconos a{
+    text-decoration: none;
+    color: #F26334;
+}
+
+.iconos a:hover {
+    color: #F0450D;
+    
+}
+
+.sobre-mi{
+    margin-left: 4%;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.4;
+    /* padding: 0 30px; */
+    width: 85%;
+    
+}
+
+
+.title_proyectos{
+    font-size: 2rem;
+    margin: 30px 30px;
+    color: #F26334;
+}
+.projects{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    
+}
+
+
+.card{
+    position: relative;
+    width: 500px;
+    height: 350px;
+    margin: 20px;
+
+}
+
+.card .face{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #333;
+}
+
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background:#FF8A00;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 5px 10px #000;
+
+}
+
+.card .back.link{
+    border-top: solid 1px #FF9B3F;
+    height: 80px;
+    
+}
+
+.card .back .link a{
+    color: #f3f3f3;
+
+}
+
+.card .back .link h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+
+footer{
+    margin-top: 100px;
+    height: 90px;
+    background: #FFD554;
+}
