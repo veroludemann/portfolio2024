@@ -160,26 +160,29 @@ header {
 
 
 .title_proyectos{
-    font-size: 2rem;
-    margin: 30px 30px;
+    font-size: 2.5rem;
+    padding: 30px;
     color: #F26334;
+    
 }
 .projects{
-    padding-top: 20px;
     display: flex;
-    flex-wrap: wrap;
     justify-content:center;
+    padding: 0 60px;
+    letter-spacing: 0.04em;
     
 }
 
 
 .card{
     position: relative;
-    width: 500px;
+    width: 400px;
     height: 350px;
     margin: 20px;
 
 }
+
+
 
 .card .face{
     position:absolute;
@@ -192,7 +195,7 @@ header {
 }
 
 .card .front{
-    transform: perspective(600px) rotateY(0deg);
+    transform: perspective(700px) rotateY(0deg);
     box-shadow: 0 5px 10px #333;
 }
 
@@ -230,11 +233,12 @@ header {
     border-top: solid 1px #FF9B3F;
     height: 80px;
     
+    
 }
 
 .card .back .link a{
     color: #f3f3f3;
-
+    padding-right: 10%;
 }
 
 .card .back .link h3{
@@ -251,9 +255,19 @@ header {
     transform: perspective(600px) rotateY(360deg);
 }
 
+.skills{
+    padding-top: 40px;
+
+}
 
 footer{
-    margin-top: 100px;
-    height: 90px;
-    background: #FFD554;
+    
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    
+    font-weight: 600;
+    
 }
+
